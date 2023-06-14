@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.ico') }}">
+
+    <!-- Scripts-->
+    <script src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles-load.js') }}"></script>
+
+
+    
+    <title>Portafolio</title>
+</head>
+<body class="body_principal">
+    <div id="particles-js"></div>
+    <!-- Menu Desplegable-->
+    <nav class="main-nav">
+            <ul>
+                <li><a class="menu_link">Nicolas Castro</a></li>
+                <li><a class="menu_link" href="#aboutme">Acerca de mi</a></li>
+                <li><a class="menu_link" href="#">Habilidades</a></li>
+                <li><a class="menu_link" href="https://github.com/nicolascastro124">Proyectos</a></li>
+                <li><a class="menu_link" href="#">Contacto</a></li>
+                <li>            
+                <a href="#" id="toggle-mode icon" onclick="toggleMode()">
+                    <i class="fas fa-sun fa-sm" id="icon-mode"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="#" id="toggle-movement" onclick="toggleMovement()">
+                        <i class="fas fa-person-walking" id="icon-toggle"></i>               
+                    </a>
+                </li>
+
+            </ul>
+    </nav>
+    <!-- Acerca de -->
+    <main>
+        <h2 class="form-h2">Correo Enviado correctamente con Gmail</h2>
+        <div class="btn-centrado">
+            <button class="btn">    
+                <a href="/">
+                <i class="fas fa-home btn-i"></i>
+                <span>Ir a Inicio</span>
+                </a>
+            </button>
+        </div>
+    </main>
+</body>
+</html>

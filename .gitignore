@@ -1,0 +1,8 @@
+# Carpeta virtualenv del entorno de desarrollo
+proyecto-env/
+
+# Directorios y archivo de entorno produccion
+proyecto-prod/tokens
+proyecto-prod/.env
+proyecto-prod/__pycache__
+proyecto-prod/py/__pycache__

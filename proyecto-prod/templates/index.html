@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.ico') }}">
+
+    <!-- Scripts-->
+    <script src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles-load.js') }}"></script>
+
+
+    
+    <title>Portafolio</title>
+</head>
+<body class="body_principal">
+    <div id="particles-js"></div>
+    <!-- Menu Desplegable-->
+    <nav class="main-nav">
+        <div class="container container--flex">
+
+            <ul class="menu-ul menu-color" id="menu-ul">
+                <li class="icon-menu" id="icon-menu">
+                    <a href="#" id="toggle-menu" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+                <li><a class="menu-link" id="enlace" href="#">Inicio</a></li>
+                <li><a class="menu-link" href="#aboutme">Acerca</a></li>
+                <li><a class="menu-link" href="#skills">Habilidades</a></li>
+                <li><a class="menu-link" href="https://github.com/nicolascastro124">Proyectos</a></li>
+                <li><a class="menu-link" href="#contact">Contacto</a></li>
+                <li>
+                    <a href="#" id="toggle-mode" class="icon" onclick="toggleMode()">
+                        <i class="fas fa-sun" id="icon-mode"></i>               
+                    </a>
+                </li>
+                <li>
+                <a href="#" id="toggle-movement" class="icon" onclick="toggleMovement()">
+                    <i class="fas fa-person-walking" id="icon-toggle"></i>               
+                </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Acerca de -->
+    <main id="body-main">
+        <section class="main" id="aboutme">
+            <h2>Acerca</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec finibus libero. Pellentesque eu tellus at eros iaculis porta at id purus. Donec volutpat nisi et mauris pretium, gravida dictum nulla cursus. Sed varius iaculis convallis. Sed convallis ornare augue eget faucibus. Nullam nec venenatis eros. Quisque elementum purus quis justo ultricies vestibulum. Proin eget quam augue. Pellentesque luctus, urna elementum ornare sagittis, mauris justo cursus nunc, congue finibus mi arcu eleifend orci. Duis bibendum, orci a gravida posuere, purus metus tincidunt nulla, quis placerat turpis quam eu purus.</p>
+            <button class="btn btn-bio" type="submit" name="envio_window" value="Windows">
+                <a href="{{ url_for('static', filename='pdf/cv.pdf') }}" download>
+                <i class="fas fa-file-arrow-down"></i>
+                <span>Descargar</span>
+                </a>
+            </button>    
+        </section>
+        <section class="main " id="#skills">
+            <h2>Tecnologias Conocidas</h2>
+
+            <ul>
+                <li><label>Python</label></li>
+                <li><label>PHP</label></li>
+                <li><label>JavaScript</label></li>
+                <li><label>NodeJS</label></li>
+                <li><label>Java</label></li>
+                <li><label>Ruby</label></li>
+                <li><label>C#</label></li>
+                <li><label>MongoDB</label></li>
+                <li><label>SQL</label></li>
+                <li><label>CSS</label></li>
+                <li><label>HTML</label></li>
+
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec finibus libero. Pellentesque eu tellus at eros iaculis porta at id purus. Donec volutpat nisi et mauris pretium, gravida dictum nulla cursus. Sed varius iaculis convallis. Sed convallis ornare augue eget faucibus. Nullam nec venenatis eros. Quisque elementum purus quis justo ultricies vestibulum. Proin eget quam augue. Pellentesque luctus, urna elementum ornare sagittis, mauris justo cursus nunc, congue finibus mi arcu eleifend orci. Duis bibendum, orci a gravida posuere, purus metus tincidunt nulla, quis placerat turpis quam eu purus.</p>
+  
+        </section>
+        <section class="main main-project" id="#projects">
+            <ul>
+                <li>
+                    <h3>Portafolio Digital</h3>
+                    <img class="img" src="https://media.discordapp.net/attachments/690997050136985640/1106699184226181251/image.png">
+                    <label>Tecnologias Aplicadas</label>
+                    <i class="fab fa-python fa-2xl"></i>
+                    <i class="fab fa-css3-alt fa-2xl"></i>
+                    <i class="fab fa-html5 fa-2xl"></i>
+                    <i class="fab fa-square-js fa-2xl"></i>
+                    <p>Proyecto donde muestro un poco sobre mi y mis conocimientos, el
+                        cual tiene varias funcionalidades como cambio a modo oscuro y claro,
+                        fondo de pagina en movimiento, envio de correo con API de Gmail.
+                    </p>
+
+                </li>
+                <div class="line-project"></div>
+                <li>
+                    <h3>Bot para Discord</h3>
+                    <img class="img" src="https://media.discordapp.net/attachments/690997050136985640/1107783292943618109/image.png" style="width: 50%;">
+                    <label>Tecnologias Aplicadas</label>    
+                    <i class="fab fa-node  fa-2xl"></i>
+                    <i class="fab fa-square-js  fa-2xl"></i>     
+                    <i class="fab fa-discord  fa-2xl"></i>
+                    <p>Bot utilizado para la app de Discord, el cual puede ser agregado a un
+                        servidor de discord, algunas de sus funcionalidades son obtener ping
+                        actual con discord, obtener imagen del avatar.
+                    </p>
+                </li>
+                <div class="line-project"></div>
+            </ul>
+
+        </section>
+        </section>
+        <section id="contact">
+        <h2 class="form-h2">Contacto</h2>
+        <form action='/envio_correo' method="POST" class="main-form">
+            <label for="sender_name">Nombre</label>
+            <input type="text" id="sender_name" name="sender_name" placeholder=" " required><br>
+          
+            <label for="sender_email">Correo</label>
+            <input type="email" id="sender_email" name="sender_email" placeholder=" " required><br>
+          
+            <label for="subject">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder=" " required><br>
+          
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder=" " required></textarea><br>
+
+            <button class="btn" type="submit" name="envio_gmail" value="gmail">
+                <i class="fab fa-google"></i>
+            </button>
+            <button class="btn" type="submit" name="envio_window" value="Windows">
+                <i class="far fa-envelope-open"></i>   
+            </button>
+
+          </form>
+        </section>
+   <footer>
+        <div class="line"></div>
+        <label>Nicolas Castro Hernández © 2023</label>
+        <a href="https://discord.com/users/1022996207339057152" target="_blank">
+            <button class="btn-footer">
+            <i class="fab fa-discord"></i>   
+            </button>
+        </a>
+        <a href="https://www.linkedin.com/in/nicolascastro124" target="_blank">
+            <button class="btn-footer">
+            <i class="fab fa-linkedin"></i>   
+            </button>
+        </a>
+        <a href="https://github.com/nicolascastro124" target="_blank">
+            <button class="btn-footer">
+            <i class="fab fa-github"></i>   
+            </button>
+        </a>
+    </footer>
+
+    </main>
+ 
+</body>
+
+</html>
